@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "runServer": "nodemon index.ts --ignore client"
+    "runServer": "nodemon index.ts --ignore client",
+    "runClient": "npm start --prefix client",
+    "dev": "concurrently --kill-others-on-fail \"npm run runServer \" \"npm run runClient \" "
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "@types/node": "^18.11.3",
     "@types/socket.io": "^3.0.2",
     "colors": "^1.4.0",
+    "concurrently": "^7.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
@@ -35,5 +38,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
