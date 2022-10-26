@@ -1,5 +1,4 @@
-interface ParentNodeProps {
-  children: React.ReactNode;
-}
+import { ParentNodeProps } from "./general";
+import { SidebarLinksProps } from "./sidebar";
 
-export type { ParentNodeProps };
+export type { ParentNodeProps, SidebarLinksProps };

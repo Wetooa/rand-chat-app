@@ -3,13 +3,13 @@ import { BigSidebar, SmallSidebar, NavBar } from "./";
 
 function SharedLayout() {
   return (
-    <body className="bg-primary w-screen h-screen">
-      <section>
+    <body className="bg-primary w-screen h-screen flex">
+      <section className="w-fit z-10">
         <BigSidebar />
         <SmallSidebar />
       </section>
 
-      <main>
+      <main className="w-screen lg:ml-[207px] transition-all">
         <nav>
           <NavBar />
         </nav>

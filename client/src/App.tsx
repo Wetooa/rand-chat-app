@@ -4,7 +4,13 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import { HomePage, RandomChatPage, LandingPage, RegisterPage } from "./pages";
+import {
+  HomePage,
+  RandomChatPage,
+  LandingPage,
+  RegisterPage,
+  RandomVideoChatPage,
+} from "./pages";
 import { SharedLayout, ProtectedRoute, NotFoundPage } from "./components";
 
 function App() {
@@ -14,6 +20,7 @@ function App() {
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<LandingPage />} />
           <Route path="/random-chat" element={<RandomChatPage />} />
+          <Route path="/random-video" element={<RandomVideoChatPage />} />
           <Route path="register" element={<RegisterPage />} />
 
           <Route
