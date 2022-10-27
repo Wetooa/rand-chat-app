@@ -1,4 +1,13 @@
+import { useEffect } from "react";
+import { useSocketContext } from "../../context/socketContext";
+
 function RandomChatPage() {
+  const { findStranger } = useSocketContext();
+
+  useEffect(() => {
+    findStranger();
+  }, []);
+
   return (
     <main className="p-2 h-screne">
       <div className="bg-gray-100 rounded-xl p-4 m-5 h-[700px] flex flex-col justify-between">

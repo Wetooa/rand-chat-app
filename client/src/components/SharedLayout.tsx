@@ -9,7 +9,7 @@ function SharedLayout() {
         <SmallSidebar />
       </section>
 
-      <main className="w-screen lg:ml-[207px] transition-all">
+      <main className="w-screen lg:ml-[195px] transition-all">
         <nav>
           <NavBar />
         </nav>

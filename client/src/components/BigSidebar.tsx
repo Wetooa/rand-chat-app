@@ -5,7 +5,7 @@ function BigSidebar() {
   console.log(sidebarLinks);
 
   return (
-    <main className="md:ml-[-300px] lg:ml-0 lg:flex bg-slate-600 flex-col w-[300px] h-screen min-w-fit shadow-md transition-all absolute ">
+    <main className="md:ml-[-300px] lg:ml-0 lg:flex bg-slate-600 flex-col h-screen min-w-fit shadow-md transition-all absolute ">
       <h3 className="text-3xl font-bold p-4 bg-gray-500 text-center">
         Random Chat App
       </h3>
